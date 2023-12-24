@@ -244,7 +244,7 @@ function App() {
         ],
       },
       {
-        jobTitle: "Parqueadero Unimonito",
+        jobTitle: "Cine Unimonito",
         description:
           "Proyecto de base de datos en el que se creo un modelo relacional y para poder ejecutar comandos crud sobre la información se implemento un servidor REST en python.",
         skills: ["Python", "API-REST", "SQL"],
