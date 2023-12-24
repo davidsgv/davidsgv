@@ -1,0 +1,9 @@
+.text{
+    color: var(--color-text);
+    font-size: var(--font-size-h4);
+    margin-top: 0.5rem;
+}
+
+.alt{
+    color: var(--color-tertiary);
+}

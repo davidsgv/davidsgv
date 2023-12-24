@@ -1,0 +1,22 @@
+.container{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-left: var(--content-padding-x);
+    padding-right: var(--content-padding-x);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.container::before{
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    content: "";
+    height: 1rem;
+    left: calc(var(--content-padding-x) / 2.1);
+    position: absolute;
+    top: 0.5rem;
+    width: 1rem;
+    z-index: 1;
+}

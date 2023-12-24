@@ -1,0 +1,20 @@
+.container{
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.container svg{
+    fill: var(--color-background-alternate);
+}
+
+.alt{
+    background-color: var(--color-background);
+}
+
+/* .alt svg{
+    fill: var(--color-background-alternate);
+} */

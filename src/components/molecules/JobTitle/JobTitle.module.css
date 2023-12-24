@@ -1,0 +1,31 @@
+.container{
+    align-items: flex-start;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+/* .container::before{
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    content: "";
+    display: block;
+    height: 30%;
+    left: calc(var(--content-padding-x) / 2);
+    position: absolute;
+    top: 10%;
+    width: 0.9rem;
+    z-index: 1;
+} */
+
+.date{
+    font-size: var(--font-size-h5);
+    font-weight: 600;
+}
+
+.bussines{
+    font-style: italic;
+    font-size: var(--font-size-description);
+    /* padding-left: var(--content-padding-x);
+    padding-right: var(--content-padding-x); */
+}

@@ -1,0 +1,23 @@
+.container{
+    background-color: var(--color-background-transparent);
+    padding-left: var(--content-padding-x);
+    padding-right: var(--content-padding-x);
+    padding-top: var(--content-padding-y);
+    padding-bottom: var(--content-padding-y);
+    position: relative;
+    margin-top: var(--spacing-sections);
+    margin-bottom: calc(var(--spacing-sections)*3.5);
+}
+
+.container::before{
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    content: "";
+    display: block;
+    height: 80%;
+    left: calc(var(--content-padding-x) / 2);
+    position: absolute;
+    top: 10%;
+    width: 0.8rem;
+    z-index: 1;
+}

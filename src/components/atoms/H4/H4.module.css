@@ -1,0 +1,8 @@
+.title{
+    color: var(--color-text);
+    font-size: var(--font-size-h4);
+}
+
+.alt{
+    color: var(--color-text-alternate);
+}

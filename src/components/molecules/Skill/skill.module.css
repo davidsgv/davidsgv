@@ -1,0 +1,15 @@
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: var(--font-size);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container > progress{
+    flex: 0 0 50%;
+}
