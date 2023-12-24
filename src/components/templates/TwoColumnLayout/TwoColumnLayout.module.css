@@ -4,6 +4,7 @@
 }
 
 .left{
+    align-items: stretch;
     background-color: var(--color-background-alternate);
     flex: 1 0 300px;
     position: relative;
