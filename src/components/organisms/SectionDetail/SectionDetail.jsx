@@ -5,15 +5,16 @@ import css from "./SectionDetail.module.css";
 import List from "../../molecules/List/List";
 import ListItem from "../../atoms/ListItem/ListItem";
 import DescriptionTitle from "../../molecules/DescriptionTitle/DescriptionTitle";
+import Badge from "../../atoms/Badge/Badge";
 
 export default function SectionDetail(props) {
   const { title, icon, text, jobs, skills, dataItems, altColor, separator } =
     props;
 
   const listJobs = jobs?.map((element, index) => {
-    // const jobSkills = element?.skills?.map((skill, indexSkill) => {
-    //   return <Skill key={indexSkill} skill={skill.skill} value={skill.value} />;
-    // });
+    const jobSkills = element?.skills?.map((skill, indexSkill) => {
+      return <Badge key={indexSkill} text={skill} />;
+    });
 
     return (
       <ListItem key={index}>
@@ -24,9 +25,17 @@ export default function SectionDetail(props) {
           BussinesName={element.BussinesName}
           altColor={altColor}
         />
-        <p className={css.text}>{element.description}</p>
-
-        {/* {jobSkills && <div className={css.skill}>{jobSkills}</div>} */}
+        {jobSkills && <div className={css.badgeContainer}>{jobSkills}</div>}
+        {element.description && (
+          <p className={css.text}>{element.description}</p>
+        )}
+        {element.link && (
+          <div className={css.text}>
+            <a className={`${altColor && css.alt}`} href={element.link.link}>
+              {element.link.text}
+            </a>
+          </div>
+        )}
       </ListItem>
     );
   });

@@ -1,8 +1,3 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-// import "./assets/css/App.css";
-
 import ImgCirlce from "./components/atoms/ImgCirlce/ImgCirlce";
 import BackgroundTitle from "./components/molecules/BackgroundTitle/BackgroundTitle";
 import SectionDetail from "./components/organisms/SectionDetail/SectionDetail";
@@ -22,11 +17,21 @@ function App() {
     dataItems: [
       {
         title: "Correo",
-        descriptions: ["davidsgv.98@gmail.com"],
+        descriptions: [
+          {
+            link: "mailto:davidsgv.98@gmail.com",
+            text: "davidsgv.98@gmail.com",
+          },
+        ],
       },
       {
         title: "LinkedIn",
-        descriptions: ["https://www.linkedin.com/in/david-gonzalez-vargas/"],
+        descriptions: [
+          {
+            link: "https://www.linkedin.com/in/david-gonzalez-vargas/",
+            text: "David Gonzalez",
+          },
+        ],
       },
     ],
   };
@@ -38,15 +43,23 @@ function App() {
       {
         title: "Ingeniero de Sistemas",
         descriptions: [
-          "Corporación Universitaria Minuto de Dios, Bogotá",
-          "Junio de 2019 - Noviembre 2024",
+          {
+            text: "Corporación Universitaria Minuto de Dios, Bogotá",
+          },
+          {
+            text: "Junio de 2019 - Noviembre 2024",
+          },
         ],
       },
       {
         title: "Técnico en Programación de Software",
         descriptions: [
-          "Servicio Nacional de Aprendizaje Sena, Bogotá",
-          "Abril de 2018 - Abril 2019",
+          {
+            text: "Servicio Nacional de Aprendizaje Sena, Bogotá",
+          },
+          {
+            text: "Abril de 2018 - Abril 2019",
+          },
         ],
       },
     ],
@@ -59,14 +72,24 @@ function App() {
       {
         title: "Platzi",
         descriptions: [
-          "Curso de Docker",
-          "Curso de Gestión Efectiva del Tiempo",
-          "Curso de Go Avanzado: Arquitectura de Eventos y CQRS",
+          {
+            text: "Curso de Docker",
+          },
+          {
+            text: "Curso de Gestión Efectiva del Tiempo",
+          },
+          {
+            text: "Curso de Go Avanzado: Arquitectura de Eventos y CQRS",
+          },
         ],
       },
       {
         title: "UxTIC - CoinEx",
-        descriptions: ["Blockchain y Criptoactivos"],
+        descriptions: [
+          {
+            text: "Blockchain y Criptoactivos",
+          },
+        ],
       },
     ],
   };
@@ -125,8 +148,12 @@ function App() {
         endDate: "Abril 2019",
         BussinesName: "Colombian Tourist, Bogotá",
         description:
-          "Desarrollar e implementar en la página web, los mockups elaborados por el área de diseño. Optimizar la velocidad de carga de las páginas. úmplementar las estrategias de SEO propuestas por la agencia de marketing",
+          "Desarrollar y llevar a cabo la integración de los mockups diseñados por el equipo de diseño en la página web, garantizando coherencia y fidelidad al diseño original. Trabajar activamente en la optimización de la velocidad de carga de las páginas para mejorar la experiencia del usuario y el rendimiento general del sitio. Además, implementar de manera efectiva las estrategias de SEO recomendadas por la agencia de marketing, asegurando una mayor visibilidad y posicionamiento en los motores de búsqueda, y optimizando así el alcance y la relevancia del contenido en línea.",
         skills: ["Javascript", "HTML", "CSS", "DotNetNuke"],
+        link: {
+          link: "https://www.colombiantourist.com/",
+          text: "Colombian Tourist Web",
+        },
       },
     ],
   };

@@ -1,9 +1,14 @@
 .text{
     color: var(--color-text);
+    display: block;
     font-size: var(--font-size-h4);
     margin-top: 0.5rem;
 }
 
 .alt{
+    color: var(--color-tertiary);
+}
+
+.alt:visited{
     color: var(--color-tertiary);
 }

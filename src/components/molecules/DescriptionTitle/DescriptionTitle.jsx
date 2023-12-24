@@ -8,11 +8,23 @@ export default function DescriptionTitle(props) {
     <>
       <H4 altColor={altColor}>{title}</H4>
       {descriptions?.map((description, index) => {
-        return (
-          <p key={index} className={`${css.text} ${css.alt}`}>
-            {description}
-          </p>
-        );
+        if (description.link) {
+          return (
+            <a
+              key={index}
+              href={description.link}
+              className={`${css.text} ${altColor && css.alt}`}
+            >
+              {description.text}
+            </a>
+          );
+        } else {
+          return (
+            <p key={index} className={`${css.text} ${altColor && css.alt}`}>
+              {description.text}
+            </p>
+          );
+        }
       })}
     </>
   );
