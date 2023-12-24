@@ -34,6 +34,10 @@
     color: var(--color-text-alternate)
 }
 
+.alt:link{
+    color: var(--color-text-alternate)
+}
+
 .skill{
     column-gap: 2rem;
     display: grid;
@@ -45,6 +49,7 @@
 
 .badgeContainer{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: flex-start;
     margin-top: 2rem;

@@ -5,6 +5,7 @@ import TwoColumnLayout from "./components/templates/TwoColumnLayout/TwoColumnLay
 import Info from "./components/atoms/svg/Education";
 import Mail from "./components/atoms/svg/Mail";
 import Book from "./components/atoms/svg/Book";
+import Board from "./components/atoms/svg/Board";
 import Profile from "./components/atoms/svg/Profile";
 import img from "./assets/img/myphoto2.jpg";
 import Experience from "./components/atoms/svg/Experience";
@@ -150,10 +151,12 @@ function App() {
         description:
           "Desarrollar y llevar a cabo la integración de los mockups diseñados por el equipo de diseño en la página web, garantizando coherencia y fidelidad al diseño original. Trabajar activamente en la optimización de la velocidad de carga de las páginas para mejorar la experiencia del usuario y el rendimiento general del sitio. Además, implementar de manera efectiva las estrategias de SEO recomendadas por la agencia de marketing, asegurando una mayor visibilidad y posicionamiento en los motores de búsqueda, y optimizando así el alcance y la relevancia del contenido en línea.",
         skills: ["Javascript", "HTML", "CSS", "DotNetNuke"],
-        link: {
-          link: "https://www.colombiantourist.com/",
-          text: "Colombian Tourist Web",
-        },
+        links: [
+          {
+            link: "https://www.colombiantourist.com/",
+            text: "Colombian Tourist Web",
+          },
+        ],
       },
     ],
   };
@@ -163,7 +166,7 @@ function App() {
     icon: <Skills />,
     skills: [
       {
-        skill: "Postgrest",
+        skill: "PostgreSQL",
         value: 75,
       },
       {
@@ -193,6 +196,83 @@ function App() {
     ],
   };
 
+  const projects = {
+    title: "Proyectos",
+    icon: <Board />,
+    jobs: [
+      {
+        jobTitle: "BI Personal",
+        description:
+          "Bi que se implemento para complementar el curso de gestión efectiva del tiempo, con esto es posible realizar una gestión efectiva de las tareas pendientes y por realizar según las metas personales.",
+        skills: [
+          "ETL",
+          "Modelo Estrella",
+          "Data Warehouse",
+          "SQL",
+          "PostgreSQL",
+          "PowerBI",
+        ],
+        links: [
+          {
+            link: "https://github.com/davidsgv/BI-Task/tree/main",
+            text: "GitHub repo",
+          },
+        ],
+      },
+      {
+        jobTitle: "GPS",
+        description:
+          "Proyecto universitario que pretendia introducir a los sistemas de geolozalización, este proyecto expone dos servicios uno para realizar operaciones crud y otro para enviar y solicitar las ubicaciones en tiempo real de los clientes.",
+        skills: ["Golang", "Websockets", "SQL", "PostgreSQL", "API-REST"],
+        links: [
+          {
+            link: "https://github.com/davidsgv/Parqueadero-back",
+            text: "GitHub repo",
+          },
+        ],
+      },
+      {
+        jobTitle: "Misioneros y Canibales",
+        description:
+          "Programa CLI de un proyecto universitario que resuelve el juego Misioneros y Canibales por medio de grafos y algoritmos de inteligencia artificial.",
+        skills: ["C#", "IA", "Busqueda en Anchura", "Grafos"],
+        links: [
+          {
+            link: "https://github.com/davidsgv/Misioneros-y-Canibales",
+            text: "GitHub repo",
+          },
+        ],
+      },
+      {
+        jobTitle: "Parqueadero Unimonito",
+        description:
+          "Proyecto de base de datos en el que se creo un modelo relacional y para poder ejecutar comandos crud sobre la información se implemento un servidor REST en python.",
+        skills: ["Python", "API-REST", "SQL"],
+        links: [
+          {
+            link: "https://github.com/davidsgv/cine-unimonito",
+            text: "GitHub repo",
+          },
+        ],
+      },
+      {
+        jobTitle: "Reto CSS",
+        description: "Replicar un periodico de los simpson en html y css",
+        skills: ["HTML", "CSS"],
+        links: [
+          {
+            link: "https://davidsgv.github.io/the-simpsons-newspaper/",
+            text: "Página",
+          },
+          {
+            link: "https://github.com/davidsgv/the-simpsons-newspaper/",
+            text: "GitHub repo",
+          },
+        ],
+      },
+    ],
+  };
+
   const rightContent = (
     <>
       <BackgroundTitle />
@@ -206,6 +286,11 @@ function App() {
         title={skills.title}
         skills={skills.skills}
         icon={skills.icon}
+      />
+      <SectionDetail
+        title={projects.title}
+        icon={projects.icon}
+        jobs={projects.jobs}
       />
     </>
   );

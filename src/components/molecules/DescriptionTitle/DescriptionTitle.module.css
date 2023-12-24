@@ -12,3 +12,7 @@
 .alt:visited{
     color: var(--color-tertiary);
 }
+
+.alt:link{
+    color: var(--color-tertiary);
+}

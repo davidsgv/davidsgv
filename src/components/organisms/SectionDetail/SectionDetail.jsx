@@ -12,8 +12,23 @@ export default function SectionDetail(props) {
     props;
 
   const listJobs = jobs?.map((element, index) => {
-    const jobSkills = element?.skills?.map((skill, indexSkill) => {
-      return <Badge key={indexSkill} text={skill} />;
+    const jobSkills = element?.skills?.map((skill, index) => {
+      return <Badge key={index} text={skill} />;
+    });
+
+    const jobLinks = element?.links?.map((element, index) => {
+      return (
+        <div className={css.text} key={index}>
+          <a
+            className={`${altColor && css.alt}`}
+            href={element.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {element.text}
+          </a>
+        </div>
+      );
     });
 
     return (
@@ -29,13 +44,7 @@ export default function SectionDetail(props) {
         {element.description && (
           <p className={css.text}>{element.description}</p>
         )}
-        {element.link && (
-          <div className={css.text}>
-            <a className={`${altColor && css.alt}`} href={element.link.link}>
-              {element.link.text}
-            </a>
-          </div>
-        )}
+        {element.links && jobLinks}
       </ListItem>
     );
   });

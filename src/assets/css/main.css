@@ -41,3 +41,7 @@ html{
 a:visited{
     color: var(--color-text);
 }
+
+a:link{
+    color: var(--color-text);
+}
