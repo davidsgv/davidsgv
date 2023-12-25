@@ -146,7 +146,7 @@ function App() {
       {
         jobTitle: "Programador junior",
         startDate: "Octubre 2018",
-        endDate: "Abril 2019",
+        endDate: "Abril 2021",
         BussinesName: "Colombian Tourist, Bogotá",
         description:
           "Desarrollar y llevar a cabo la integración de los mockups diseñados por el equipo de diseño en la página web, garantizando coherencia y fidelidad al diseño original. Trabajar activamente en la optimización de la velocidad de carga de las páginas para mejorar la experiencia del usuario y el rendimiento general del sitio. Además, implementar de manera efectiva las estrategias de SEO recomendadas por la agencia de marketing, asegurando una mayor visibilidad y posicionamiento en los motores de búsqueda, y optimizando así el alcance y la relevancia del contenido en línea.",
