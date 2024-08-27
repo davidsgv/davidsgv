@@ -119,7 +119,7 @@ function App() {
         icon={courses.icon}
         dataItems={courses.dataItems}
         altColor={true}
-        // separator={true}
+      // separator={true}
       />
     </>
   );
@@ -138,7 +138,7 @@ function App() {
         jobTitle: "Desarrollador",
         startDate: "Abril 2021",
         endDate: "Febrero 2023",
-        BussinesName: "Neotech Engineering Ltda, Bogotá",
+        bussinesName: "Neotech Engineering Ltda, Bogotá",
         description:
           "Implementar modificaciones en el aplicativo conforme a las historias de usuario del sprint en curso, haciendo uso de la metodología PSP. Mejorar y optimizar funcionalidades según sea necesario. Desarrollar y perfeccionar procedimientos almacenados. Realizar pruebas con Cucumber teniendo en cuenta la metodología BDD.",
         skills: ["SQL SERVER", "DevExpress", ".Net", "C#"],
@@ -147,7 +147,7 @@ function App() {
         jobTitle: "Programador junior",
         startDate: "Octubre 2018",
         endDate: "Abril 2021",
-        BussinesName: "Colombian Tourist, Bogotá",
+        bussinesName: "Colombian Tourist, Bogotá",
         description:
           "Desarrollar y llevar a cabo la integración de los mockups diseñados por el equipo de diseño en la página web, garantizando coherencia y fidelidad al diseño original. Trabajar activamente en la optimización de la velocidad de carga de las páginas para mejorar la experiencia del usuario y el rendimiento general del sitio. Además, implementar de manera efectiva las estrategias de SEO recomendadas por la agencia de marketing, asegurando una mayor visibilidad y posicionamiento en los motores de búsqueda, y optimizando así el alcance y la relevancia del contenido en línea.",
         skills: ["Javascript", "HTML", "CSS", "DotNetNuke"],

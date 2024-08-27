@@ -1,4 +1,4 @@
-.container{
+.container {
     background-color: var(--color-background-transparent);
     padding-left: var(--content-padding-x);
     padding-right: var(--content-padding-x);
@@ -9,7 +9,7 @@
     margin-bottom: calc(var(--spacing-sections)*3.5);
 }
 
-.container::before{
+.container::before {
     background-color: var(--color-primary);
     border-radius: 1rem;
     content: "";
@@ -20,4 +20,19 @@
     top: 10%;
     width: 0.8rem;
     z-index: 1;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: var(--font-size-h1);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-text);
+    font-size: var(--font-size-h2);
+}
+
+.accent {
+    color: var(--color-primary);
 }
