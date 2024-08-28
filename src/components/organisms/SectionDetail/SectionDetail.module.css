@@ -1,10 +1,10 @@
-.container{
+.container {
     margin-top: var(--spacing-sections);
     margin-bottom: var(--spacing-sections);
     position: relative;
 }
 
-.separator::after{
+.separator::after {
     content: "";
     position: absolute;
     width: 70%;
@@ -14,31 +14,31 @@
     left: 15%;
 }
 
-.text{
+.text {
     display: block;
     font-size: var(--font-size);
     text-align: justify;
     margin-top: 1rem;
 }
 
-.content{
+.content {
     padding-left: var(--content-padding-x);
     padding-right: var(--content-padding-x);
 }
 
-.alt{
+.alt {
     color: var(--color-text-alternate)
 }
 
-.alt:visited{
+.alt:visited {
     color: var(--color-text-alternate)
 }
 
-.alt:link{
+.alt:link {
     color: var(--color-text-alternate)
 }
 
-.skill{
+.skill {
     column-gap: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
@@ -47,14 +47,6 @@
     row-gap: 1rem;
 }
 
-.badgeContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: flex-start;
-    margin-top: 2rem;
-}
-
-.container hr{
+.container hr {
     width: 100%;
 }

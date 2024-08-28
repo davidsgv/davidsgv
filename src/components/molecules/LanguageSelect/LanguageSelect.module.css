@@ -1,0 +1,105 @@
+.switch {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    display: inline-block;
+    margin: 0 5px;
+    z-index: 2;
+}
+
+.switch>span {
+    position: absolute;
+    top: 12px;
+    pointer-events: none;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+}
+
+input.checkToggleRoundFlat:checked~.off {
+    color: var(--color-primary);
+}
+
+input.checkToggleRoundFlat:checked~.on {
+    color: var(--color-secondary);
+}
+
+.switch>span.on {
+    left: 0;
+    padding-left: 2px;
+    color: var(--color-primary);
+}
+
+.switch>span.off {
+    right: 0;
+    padding-right: 4px;
+    color: var(--color-secondary);
+}
+
+.checkToggle+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.checkToggleRoundFlat+label {
+    padding: 2px;
+    width: 100px;
+    height: 35px;
+    background-color: var(--color-primary);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+}
+
+input.checkToggleRoundFlat+label:before,
+input.checkToggleRoundFlat+label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.checkToggleRoundFlat+label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: var(--color-primary);
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+}
+
+input.checkToggleRoundFlat+label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 48px;
+    background-color: var(--color-secondary);
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+
+/* input.checkToggleRoundFlat:checked+label {} */
+
+input.checkToggleRoundFlat:checked+label:after {
+    margin-left: 44px;
+}

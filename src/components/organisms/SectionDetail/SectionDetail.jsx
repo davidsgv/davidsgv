@@ -1,53 +1,24 @@
 import IconTitle from "../../molecules/IconTitle/IconTitle";
-import JobTitle from "../../molecules/JobTitle/JobTitle";
 import Skill from "../../molecules/Skill/Skill";
 import css from "./SectionDetail.module.css";
 import List from "../../molecules/List/List";
 import ListItem from "../../atoms/ListItem/ListItem";
 import DescriptionTitle from "../../molecules/DescriptionTitle/DescriptionTitle";
-import Badge from "../../atoms/Badge/Badge";
+import JobList from "../JobList/JobList";
 
+/**
+ * Componente SectionDetail que muestra una seccion con contenido.
+ * 
+//  * @param {object} props - Props del componente.
+//  * @param {string} props.jobTitle - Cargo del puesto laboral.
+//  * @param {string} props.bussinesName - Nombre de la empresa.
+//  * @param {string} props.startDate - fecha inicio en la empresa.
+//  * @param {string} props.endDate - fecha fin en la empresa.
+//  * @param {boolean} props.altColor - Si es `true`, aplica un color alternativo al título.
+ */
 export default function SectionDetail(props) {
   const { title, icon, text, jobs, skills, dataItems, altColor, separator } =
     props;
-
-  const listJobs = jobs?.map((element, index) => {
-    const jobSkills = element?.skills?.map((skill, index) => {
-      return <Badge key={index} text={skill} />;
-    });
-
-    const jobLinks = element?.links?.map((element, index) => {
-      return (
-        <div className={css.text} key={index}>
-          <a
-            className={`${altColor && css.alt}`}
-            href={element.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {element.text}
-          </a>
-        </div>
-      );
-    });
-
-    return (
-      <ListItem key={index}>
-        <JobTitle
-          jobTitle={element.jobTitle}
-          startDate={element.startDate}
-          endDate={element.endDate}
-          BussinesName={element.BussinesName}
-          altColor={altColor}
-        />
-        {jobSkills && <div className={css.badgeContainer}>{jobSkills}</div>}
-        {element.description && (
-          <p className={css.text}>{element.description}</p>
-        )}
-        {element.links && jobLinks}
-      </ListItem>
-    );
-  });
 
   const listSkills = skills?.map((element, index) => {
     return <Skill key={index} skill={element.skill} value={element.value} />;
@@ -76,7 +47,7 @@ export default function SectionDetail(props) {
         </p>
       )}
 
-      {listJobs && <List>{listJobs}</List>}
+      {jobs && <JobList jobs={jobs} />}
 
       {listSkills && <div className={css.skill}>{listSkills}</div>}
 
