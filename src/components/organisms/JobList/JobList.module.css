@@ -1,0 +1,18 @@
+.text {
+    display: block;
+    font-size: var(--font-size);
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.alt {
+    color: var(--color-text-alternate)
+}
+
+.alt:visited {
+    color: var(--color-text-alternate)
+}
+
+.alt:link {
+    color: var(--color-text-alternate)
+}
